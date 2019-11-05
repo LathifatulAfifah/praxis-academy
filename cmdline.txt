@@ -1,0 +1,436 @@
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+#1
+C:\Windows\system32>help
+For more information on a specific command, type HELP command-name
+ASSOC          Displays or modifies file extension associations.
+ATTRIB         Displays or changes file attributes.
+BREAK          Sets or clears extended CTRL+C checking.
+BCDEDIT        Sets properties in boot database to control boot loading.
+CACLS          Displays or modifies access control lists (ACLs) of files.
+CALL           Calls one batch program from another.
+CD             Displays the name of or changes the current directory.
+CHCP           Displays or sets the active code page number.
+CHDIR          Displays the name of or changes the current directory.
+CHKDSK         Checks a disk and displays a status report.
+CHKNTFS        Displays or modifies the checking of disk at boot time.
+CLS            Clears the screen.
+CMD            Starts a new instance of the Windows command interpreter.
+COLOR          Sets the default console foreground and background colors.
+COMP           Compares the contents of two files or sets of files.
+COMPACT        Displays or alters the compression of files on NTFS partitions.
+CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
+               current drive.
+COPY           Copies one or more files to another location.
+DATE           Displays or sets the date.
+DEL            Deletes one or more files.
+DIR            Displays a list of files and subdirectories in a directory.
+DISKCOMP       Compares the contents of two floppy disks.
+DISKCOPY       Copies the contents of one floppy disk to another.
+DISKPART       Displays or configures Disk Partition properties.
+DOSKEY         Edits command lines, recalls Windows commands, and
+               creates macros.
+DRIVERQUERY    Displays current device driver status and properties.
+ECHO           Displays messages, or turns command echoing on or off.
+ENDLOCAL       Ends localization of environment changes in a batch file.
+ERASE          Deletes one or more files.
+EXIT           Quits the CMD.EXE program (command interpreter).
+FC             Compares two files or sets of files, and displays the
+               differences between them.
+FIND           Searches for a text string in a file or files.
+FINDSTR        Searches for strings in files.
+FOR            Runs a specified command for each file in a set of files.
+FORMAT         Formats a disk for use with Windows.
+FSUTIL         Displays or configures the file system properties.
+FTYPE          Displays or modifies file types used in file extension
+               associations.
+GOTO           Directs the Windows command interpreter to a labeled line in
+               a batch program.
+GPRESULT       Displays Group Policy information for machine or user.
+GRAFTABL       Enables Windows to display an extended character set in
+               graphics mode.
+HELP           Provides Help information for Windows commands.
+ICACLS         Display, modify, backup, or restore ACLs for files and
+               directories.
+IF             Performs conditional processing in batch programs.
+LABEL          Creates, changes, or deletes the volume label of a disk.
+MD             Creates a directory.
+MKDIR          Creates a directory.
+MKLINK         Creates Symbolic Links and Hard Links
+MODE           Configures a system device.
+MORE           Displays output one screen at a time.
+MOVE           Moves one or more files from one directory to another
+               directory.
+OPENFILES      Displays files opened by remote users for a file share.
+PATH           Displays or sets a search path for executable files.
+PAUSE          Suspends processing of a batch file and displays a message.
+POPD           Restores the previous value of the current directory saved by
+               PUSHD.
+PRINT          Prints a text file.
+PROMPT         Changes the Windows command prompt.
+PUSHD          Saves the current directory then changes it.
+RD             Removes a directory.
+RECOVER        Recovers readable information from a bad or defective disk.
+REM            Records comments (remarks) in batch files or CONFIG.SYS.
+REN            Renames a file or files.
+RENAME         Renames a file or files.
+REPLACE        Replaces files.
+RMDIR          Removes a directory.
+ROBOCOPY       Advanced utility to copy files and directory trees
+SET            Displays, sets, or removes Windows environment variables.
+SETLOCAL       Begins localization of environment changes in a batch file.
+SC             Displays or configures services (background processes).
+SCHTASKS       Schedules commands and programs to run on a computer.
+SHIFT          Shifts the position of replaceable parameters in batch files.
+SHUTDOWN       Allows proper local or remote shutdown of machine.
+SORT           Sorts input.
+START          Starts a separate window to run a specified program or command.
+SUBST          Associates a path with a drive letter.
+SYSTEMINFO     Displays machine specific properties and configuration.
+TASKLIST       Displays all currently running tasks including services.
+TASKKILL       Kill or stop a running process or application.
+TIME           Displays or sets the system time.
+TITLE          Sets the window title for a CMD.EXE session.
+TREE           Graphically displays the directory structure of a drive or
+               path.
+TYPE           Displays the contents of a text file.
+VER            Displays the Windows version.
+VERIFY         Tells Windows whether to verify that your files are written
+               correctly to a disk.
+VOL            Displays a disk volume label and serial number.
+XCOPY          Copies files and directory trees.
+WMIC           Displays WMI information inside interactive command shell.
+
+For more information on tools see the command-line reference in the online help.
+
+
+#2
+C:\Windows\system32>ping google.com
+
+Pinging google.com [74.125.24.138] with 32 bytes of data:
+Reply from 74.125.24.138: bytes=32 time=62ms TTL=42
+Request timed out.
+Reply from 74.125.24.138: bytes=32 time=39ms TTL=42
+Reply from 74.125.24.138: bytes=32 time=35ms TTL=42
+
+Ping statistics for 74.125.24.138:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 35ms, Maximum = 62ms, Average = 45ms
+
+
+#3
+C:\Windows\system32>date
+The current date is: Tue 11/05/2019
+Enter the new date: (mm-dd-yy)
+
+
+#4
+C:\Windows\system32>time
+The current time is:  9:20:01.85
+Enter the new time:
+
+
+#5
+C:\Windows\system32>tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          4 K
+System                           4 Services                   0        424 K
+smss.exe                       292 Services                   0        988 K
+csrss.exe                      448 Services                   0      3,596 K
+wininit.exe                    556 Services                   0      3,416 K
+csrss.exe                      572 Console                    1      7,004 K
+winlogon.exe                   616 Console                    1      6,632 K
+services.exe                   660 Services                   0      6,424 K
+lsass.exe                      668 Services                   0      8,868 K
+svchost.exe                    736 Services                   0      9,856 K
+svchost.exe                    780 Services                   0      6,408 K
+dwm.exe                        876 Console                    1     30,440 K
+atiesrxx.exe                   884 Services                   0      3,884 K
+svchost.exe                    980 Services                   0     23,824 K
+svchost.exe                   1008 Services                   0     40,604 K
+svchost.exe                    264 Services                   0     18,212 K
+atieclxx.exe                   308 Console                    1      6,376 K
+svchost.exe                    468 Services                   0     54,684 K
+svchost.exe                    672 Services                   0     15,124 K
+spoolsv.exe                   1208 Services                   0     10,632 K
+svchost.exe                   1236 Services                   0     17,976 K
+OfficeClickToRun.exe          1364 Services                   0     26,524 K
+dasHost.exe                   1516 Services                   0      8,960 K
+taskhostex.exe                1608 Console                    1      9,776 K
+explorer.exe                  1720 Console                    1    114,636 K
+PsiService_2.exe              1980 Services                   0      2,936 K
+svchost.exe                   2024 Services                   0      5,820 K
+TeamViewer_Service.exe        1120 Services                   0     14,004 K
+MsMpEng.exe                   1476 Services                   0    111,776 K
+GoogleCrashHandler.exe        2228 Services                   0        196 K
+GoogleCrashHandler64.exe      2236 Services                   0        236 K
+StikyNot.exe                  2356 Console                    1     12,452 K
+WmiPrvSE.exe                  2684 Services                   0     11,324 K
+mshta.exe                     2776 Console                    1     32,880 K
+Lightshot.exe                 2892 Console                    1     10,492 K
+NisSrv.exe                    2576 Services                   0      5,492 K
+SearchIndexer.exe             2788 Services                   0     26,000 K
+svchost.exe                   2444 Services                   0      9,988 K
+sppsvc.exe                    3760 Services                   0      7,520 K
+chrome.exe                    3644 Console                    1    145,332 K
+chrome.exe                    3604 Console                    1      4,632 K
+chrome.exe                    3612 Console                    1      5,668 K
+chrome.exe                    3740 Console                    1     51,240 K
+chrome.exe                    3756 Console                    1     35,516 K
+RuntimeBroker.exe             3812 Console                    1      6,144 K
+chrome.exe                    3372 Console                    1     30,580 K
+chrome.exe                    4048 Console                    1     28,428 K
+notepad.exe                   4184 Console                    1      6,420 K
+WmiPrvSE.exe                  4216 Services                   0     25,340 K
+WUDFHost.exe                  4536 Services                   0      8,540 K
+taskeng.exe                   4744 Services                   0      4,376 K
+svchost.exe                   4856 Services                   0      5,232 K
+audiodg.exe                   5008 Services                   0     11,128 K
+cmd.exe                       3524 Console                    1      2,308 K
+conhost.exe                   2848 Console                    1      4,512 K
+cmd.exe                       2084 Console                    1      2,332 K
+conhost.exe                   2340 Console                    1      4,608 K
+chrome.exe                     340 Console                    1     80,864 K
+chrome.exe                    4732 Console                    1    212,756 K
+chrome.exe                    4004 Console                    1     87,016 K
+chrome.exe                    2872 Console                    1     53,448 K
+WmiApSrv.exe                  1248 Services                   0      5,032 K
+chrome.exe                    4268 Console                    1     51,780 K
+chrome.exe                    3240 Console                    1     18,396 K
+chrome.exe                    1100 Console                    1      9,960 K
+tasklist.exe                  1628 Console                    1      5,276 K
+
+
+#6
+C:\Windows\system32>ver
+
+Microsoft Windows [Version 6.3.9600]
+
+
+#7
+C:\Windows\system32>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    192.168.1.14:49193     sa-in-f188:5228        ESTABLISHED
+  TCP    192.168.1.14:49421     185.199.108.154:https  ESTABLISHED
+  TCP    192.168.1.14:49423     lb-140-82-114-25-iad:https  ESTABLISHED
+  TCP    192.168.1.14:49433     185.199.108.154:https  ESTABLISHED
+  TCP    192.168.1.14:49434     lb-192-30-253-124-iad:https  ESTABLISHED
+  TCP    192.168.1.14:49435     65.55.44.109:https     ESTABLISHED
+  TCP    192.168.1.14:49436     65.55.44.109:https     ESTABLISHED
+  TCP    192.168.1.14:49437     65.55.44.109:https     ESTABLISHED
+  TCP    192.168.1.14:49441     13.107.21.200:https    ESTABLISHED
+  TCP    192.168.1.14:49442     13.107.21.200:https    ESTABLISHED
+
+
+#8
+C:\Windows\system32>hostname
+G40-70
+
+
+#9
+C:\Windows\system32>chkdsk
+The type of the file system is NTFS.
+
+WARNING!  F parameter not specified.
+Running CHKDSK in read-only mode.
+
+Stage 1: Examining basic file system structure ...
+
+
+  359936 file records processed.
+
+File verification completed.
+
+
+  3497 large file records processed.
+
+
+  0 bad file records processed.
+
+Stage 2: Examining file name linkage ...
+Progress: 408137 of 485460 done; Stage: 84%; Total: 69%; ETA:   0:01:00
+
+
+#10
+C:\Windows\system32>color 91
+Command pronpt berubah menjadi biru
+
+
+#11
+C:\Windows\system32>echo
+ECHO is on.
+
+
+#12
+C:\Windows\system32>query user
+ USERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME
+>lenovo g40            console             1  Active      none   11/5/2019 09:12
+
+
+#13
+C:\Windows\system32>quser
+ USERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME
+>lenovo g40            console             1  Active      none   11/5/2019 09:12
+
+
+#14
+C:\Windows\system32>telnet
+'telnet' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+#15
+C:\Windows\system32>whoami
+g40-70\lenovo g40
+
+
+#16
+C:\Windows\system32>vol
+ Volume in drive C has no label.
+ Volume Serial Number is 38D1-A776
+
+
+#17
+C:\Windows\system32>verify
+VERIFY is off.
+
+
+#18
+C:\Windows\system32>systeminfo
+
+Host Name:                 G40-70
+OS Name:                   Microsoft Windows 8.1 Pro
+OS Version:                6.3.9600 N/A Build 9600
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          Lenovo G40
+Registered Organization:
+Product ID:                00261-50000-00000-AA989
+Original Install Date:     8/2/2019, 22:15:51
+System Boot Time:          11/5/2019, 09:11:35
+System Manufacturer:       LENOVO
+System Model:              80E1
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: AMD64 Family 22 Model 48 Stepping 1 AuthenticAM
+D ~1000 Mhz
+BIOS Version:              LENOVO A2CN42WW(V2.10), 1/5/2016
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC+07:00) Bangkok, Hanoi, Jakarta
+Total Physical Memory:     3,548 MB
+Available Physical Memory: 2,236 MB
+Virtual Memory: Max Size:  5,148 MB
+Virtual Memory: Available: 3,213 MB
+Virtual Memory: In Use:    1,935 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\G40-70
+Hotfix(s):                 41 Hotfix(s) Installed.
+                           [01]: KB2899189_Microsoft-Windows-CameraCodec-Package
+
+                           [02]: KB2843630
+                           [03]: KB2862152
+                           [04]: KB2868626
+                           [05]: KB2883200
+                           [06]: KB2884846
+                           [07]: KB2887595
+                           [08]: KB2889543
+                           [09]: KB2892074
+                           [10]: KB2893294
+                           [11]: KB2894029
+                           [12]: KB2894179
+                           [13]: KB2898514
+                           [14]: KB2898742
+                           [15]: KB2901101
+                           [16]: KB2903939
+                           [17]: KB2906956
+                           [18]: KB2908174
+                           [19]: KB2909569
+                           [20]: KB2911106
+                           [21]: KB2911134
+                           [22]: KB2912390
+                           [23]: KB2913152
+                           [24]: KB2913270
+                           [25]: KB2914218
+                           [26]: KB2919355
+                           [27]: KB2919394
+                           [28]: KB2922229
+                           [29]: KB2923528
+                           [30]: KB2928680
+                           [31]: KB2931366
+                           [32]: KB2934520
+                           [33]: KB2939087
+                           [34]: KB2961908
+                           [35]: KB2964757
+                           [36]: KB2975061
+                           [37]: KB2980654
+                           [38]: KB3021910
+                           [39]: KB3038936
+                           [40]: KB3172729
+                           [41]: KB3173424
+Network Card(s):           3 NIC(s) Installed.
+                           [01]: Realtek PCIe GBE Family Controller
+                                 Connection Name: Ethernet
+                                 Status:          Media disconnected
+                           [02]: Bluetooth Device (Personal Area Network)
+                                 Connection Name: Bluetooth Network Connection
+                                 Status:          Media disconnected
+                           [03]: Realtek RTL8723BE Wireless LAN 802.11n PCI-E NI
+C
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.1.1
+                                 IP address(es)
+                                 [01]: 192.168.1.14
+                                 [02]: fe80::c875:14c4:c2e7:3d8e
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: No
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes
+
+
+#19
+C:\Windows\system32>nbtstat
+
+Displays protocol statistics and current TCP/IP connections using NBT
+(NetBIOS over TCP/IP).
+
+NBTSTAT [ [-a RemoteName] [-A IP address] [-c] [-n]
+        [-r] [-R] [-RR] [-s] [-S] [interval] ]
+
+  -a   (adapter status) Lists the remote machine's name table given its name
+  -A   (Adapter status) Lists the remote machine's name table given its
+                        IP address.
+  -c   (cache)          Lists NBT's cache of remote [machine] names and their IP
+ addresses
+  -n   (names)          Lists local NetBIOS names.
+  -r   (resolved)       Lists names resolved by broadcast and via WINS
+  -R   (Reload)         Purges and reloads the remote cache name table
+  -S   (Sessions)       Lists sessions table with the destination IP addresses
+  -s   (sessions)       Lists sessions table converting destination IP
+                        addresses to computer NETBIOS names.
+  -RR  (ReleaseRefresh) Sends Name Release packets to WINS and then, starts Refr
+esh
+
+  RemoteName   Remote host machine name.
+  IP address   Dotted decimal representation of the IP address.
+  interval     Redisplays selected statistics, pausing interval seconds
+               between each display. Press Ctrl+C to stop redisplaying
+               statistics.
+
+
+#20
+C:\Windows\system32>pause
+Press any key to continue . . .
